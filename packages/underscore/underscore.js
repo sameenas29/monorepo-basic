@@ -5,8 +5,8 @@
     var current = global._;
     var exports = global._ = factory();
     exports.noConflict = function () { global._ = current; return exports; };
-  }()));
-}(this, (function () {
+  })());
+})(this, (function () {
   //     Underscore.js 1.13.4
   //     https://underscorejs.org
   //     (c) 2009-2022 Jeremy Ashkenas, Julian Gonggrijp, and DocumentCloud and Investigative Reporters & Editors
@@ -830,13 +830,13 @@
   };
 
   // Function for escaping strings to HTML interpolation.
-  var _escape = createEscaper(escapeMap);
+  var escape = createEscaper(escapeMap);
 
   // Internal list of HTML entities for unescaping.
   var unescapeMap = invert(escapeMap);
 
   // Function for unescaping strings from HTML interpolation.
-  var _unescape = createEscaper(unescapeMap);
+  var unescape = createEscaper(unescapeMap);
 
   // By default, Underscore uses ERB-style template delimiters. Change the
   // following template settings to use alternative delimiters.
@@ -1937,8 +1937,8 @@
     times: times,
     random: random,
     now: now,
-    escape: _escape,
-    unescape: _unescape,
+    escape: escape,
+    unescape: unescape,
     templateSettings: templateSettings,
     template: template,
     result: result,
@@ -2038,5 +2038,5 @@
 
   return _;
 
-})));
+}));
 //# sourceMappingURL=underscore-umd.js.map

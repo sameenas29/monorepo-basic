@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "clean": "node clean.js",
-    "build": "yarn workspaces foreach run build"
+    "build": "yarn workspace underscore build && yarn workspace turbo-ignore build && yarn workspace @turbo/codemod build && yarn workspace react-carousel build && yarn workspace logger build && yarn workspace create-turbo build && yarn workspace @acme/utils build && yarn workspace @acme/utils build && yarn workspace ui build && yarn workspace @acme/core build && yarn workspace sample-app build "
   },
   "workspaces": [
     "packages/*",

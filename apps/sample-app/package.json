@@ -10,9 +10,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@acme/core": "*",
+    "logger": "*",
     "next": "12.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "turbo-ignore": "*"
   },
   "devDependencies": {
     "@types/node": "17.0.43",
